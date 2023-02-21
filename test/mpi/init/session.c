@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
         /* basic sanity check */
         assert(num_repeat > 0 && num_repeat < 100);
     }
+    library_foo_test();
 
     MPI_Init_thread(&argc, &argv, MPI_THREAD_MULTIPLE, &provided);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
